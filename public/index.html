@@ -2,16 +2,275 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MP1 Starter</title>
+  <title>YangSong</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <div class="test"> My name is Anthony.</div>
-  <div class="cat">
-    <img src="./media/cat.jpg" alt="Cat">
-  </div>
+
+
+  <nav class="navbar" id="navbar">
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <video class="sleep-video" autoplay>
+      <source src="./media/Traffic-blurred.mp4" type="video/mp4">
+</video>
+
+
+  <section id="home" class="home">
+    
+    <div class = "layout">
+      <div class="outer">
+        <div class="inner">
+          <img class="imgcircle" src="https://dl.dropboxusercontent.com/s/zpx7t8wv5m7zp2c/homepic.jpg?dl=0" width="150" height="150"></img>
+
+        </div>
+        <div class="innercontent">
+          <div class="realcontent">
+            <h1 class="title">Hi, I am Yang.</h1>
+            <br>
+                <a class="fa-stack fa-2x" href="#about">
+                   <i class="fa fa-circle-thin fa-stack-2x icon-color"></i>
+                  <i class="fa fa-user fa-stack-1x icon-color"></i>
+                </a>
+                <a class="fa-stack fa-2x" href="#portfolio">
+                   <i class="fa fa-circle-thin fa-stack-2x icon-color"></i>
+                  <i class="fa fa-suitcase fa-stack-1x icon-color"></i>
+                </a>
+                <a class="fa-stack fa-2x" href="#gallery">
+                   <i class="fa fa-circle-thin fa-stack-2x icon-color"></i>
+                  <i class="fa fa-camera-retro fa-stack-1x icon-color"></i>
+                </a>
+                <a class="fa-stack fa-2x" href="#contact">
+                   <i class="fa fa-circle-thin fa-stack-2x icon-color"></i>
+                  <i class="fa fa-envelope fa-stack-1x icon-color"></i>
+                </a>
+        </div>
+      </div>
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+  <section id="empty" class="empty">
+  </section>
+
+  <section id="about" class = "about">
+    <div class="content">
+      <h2>About Me</h2></br></br>
+
+      <div>
+                <p>My name is Yang Song. I am currently master student at Department of Computer Science, University of Illinois at Urbana-Champaign (UIUC) and expect to graduate in December 2016.</p>
+                <p>Before that, however, my major was Environmental Engineering. I earned my M.S. degree at UIUC, and my B.S. degree at Tongji University,Shanghai. </p>
+                <p>The reason I decided to change my major is that I find my strong interest and passion in programming. I then made my effort to acquire the necessary knowledge in CS in the past year and got admitted by the CS master program at UIUC. </p>
+
+                <p>Currently I am seeking for an software engineering internship position for summer 2016.</p>
+      </div>
+
+
+    </div>
+
+    <!-- <div class="fixed-bg"> -->
+
+
+
+    </div>
+
+    
+  </section>
+
+   <section id="portfolio" class="portfolio">
+
+    <div class = "content">
+
+      <h2>Portfolio</h2></br></br>
+
+      <div class="container">
+        <div class = "element">
+            
+          <a href="#dialog1" name="modal" class="elem-text">
+            <img src="./media/mac.png" width = "300" height="200">
+          </br>The Undebuggable OS
+        </img></a>
+        </div>
+        <div class = "element">
+            
+          <a href="#dialog2" name="modal" class="elem-text">
+            <img src="./media/jenkins.png" width = "300" height="200">
+          </br>Jenkins Plugin Extension
+        </img></a>
+          
+        </div>
+        <div class = "element">
+            
+          <a href="#dialog3" name="modal" class="elem-text" ><img src="./media/chrome.png" width = "300" height="200">
+          </br>
+          TCP Server
+        </img></a>
+          
+        </div>
+      </div>
+      <br><br>
+      <div class="container">
+        <div class = "element">
+            
+          <a href="#dialog4" name="modal" class="elem-text" >
+            <img src="./media/expedia.png" width = "300" height="200">
+          </br>Fake Expedia
+        </img></a>
+        </div>
+        <div class = "element">
+            
+          <a href="#dialog5" name="modal" class="elem-text">
+            <img src="./media/yelp.png" width = "300" height="200">
+          </br>Urbana-Champaign Food-Zone
+        </img></a>
+          
+        </div>
+        <div class = "element">
+            
+          <a href="#dialog6" name="modal" class="elem-text">
+            <img src="./media/twitter.png" width = "300" height="200">
+          </br>Twitter Scrapper
+        </img></a>
+          
+        </div>
+      </div>
+
+      
+
+    </div>
+
+
+    <div id="boxes">
+        
+        <!-- #customize your modal window here -->
+        <div id="dialog1" class="window">
+          <!-- <button  class="close">X</button> -->
+          <a class="fa fa-close fa-stack-1x icon-color close"></a>
+            <p><b>The Undebuggable OS</b> </p>
+          </br>
+          <p>ECE391 Course Project</p>
+          <p>A barebones Linux Kernel from scratch in a group of four</p>
+          <p>Proudly placed 2nd in the Microsoft Sponsored OS Design Competition among 44 teams</p>
+        </div>
+        <div id="dialog2" class="window">
+          <!-- <button  class="close">X</button> -->
+          <a class="fa fa-close fa-stack-1x icon-color close"></a>
+            <p><b>Jenkins Plugin Extension</b> </p>
+          </br>
+          <p>CS427 Course Project</p>
+           <p > Modified Job Configuration History Plugin to support configuration history synchronization between Jenkins Instance and Subversion Repository in a group of seven </p>
+        </div>
+        <div id="dialog3" class="window">
+          <!-- <button  class="close">X</button> -->
+          <a class="fa fa-close fa-stack-1x icon-color close"></a>
+            <p><b>TCP Server</b> </p>
+          </br>
+          <p>CS438 Course Assignment</p>
+          <p> Used socket and multithread programming to implement a TCP-like protocol over annunreliable channel with packets artificially dropped or delayed</p>
+          <p> Features including reliability guarantee, congestion control and TCP fairness</p>
+        </div>
+        <div id="dialog4" class="window">
+          <!-- <button  class="close">X</button> -->
+          <a class="fa fa-close fa-stack-1x icon-color close"></a>
+            <p><b>Fake Expedia</b> </p>
+          </br>
+          <p>Individual Project</p>
+          <p>Wrote script that runs daily on Heroku server to query airline tickets data for coming weekends from Google API and store data in PostgreSQL database</p>
+          <p> Visualized the data using Highcharts in the frontend powered by Django1.9</p>
+        </div>
+        <div id="dialog5" class="window">
+          <!-- <button  class="close">X</button> -->
+          <a class="fa fa-close fa-stack-1x icon-color close"></a>
+            <p><b>Urbana-Champaign Food-Zone</b> </p>
+          </br>
+          <p>CS411 Course Project</p>
+          <p>A platform for sellers to sell theirs homemade food</p>
+          <p>More Coming Soon!</p>
+        </div>
+        <div id="dialog6" class="window">
+          <!-- <button  class="close">X</button> -->
+          <a class="fa fa-close fa-stack-1x icon-color close"></a>
+            <p><b>Twitter Scraper</b> </p>
+          </br>
+          <p>CS411 Course Project</p>
+          <p>A tool to retrieve twitter real time data</p>
+          <p>More Coming Soon!</p>
+        </div>
+        
+        <!-- Do not remove div#mask, because you'll need it to fill the whole screen -->    
+         <div id="mask"></div>
+    </div>
+
+  </section>
+
+
+
+
+   <section id="gallery" class = "gallery">
+    <div class="content">
+      <h2>Gallery</h2></br></br>
+        <div id = "carousel">
+          
+
+        <div id="slides">
+          <ul>
+            <li><img src="./media/1.jpg" width = "800"  alt="pic1"></li>
+             <li><img src="./media/2.jpg" width = "800" alt="pic2"></li>
+              <li><img src="./media/3.jpg" width = "800" alt="pic3"></li>
+              <li><img src="./media/4.jpg" width = "800"  alt="pic4"></li>
+             <li><img src="./media/5.jpg" width = "800" alt="pic5"></li>
+              <li><img src="./media/6.jpg" width = "800" alt="pic6"></li>
+          </ul>
+          <div class="clear"></div>
+
+      </div>
+      <div id="buttons">
+              <a id="prev" herf="#" class="fa fa-angle-left fa-fw fa-2x "></a>
+              <a id="next" herf="#" class="fa fa-angle-right fa-fw fa-2x "></a>
+              <!-- <a  herf="#" id="next">next</a> -->
+              <div class="clear"></div>
+       </div>
+
+
+      </div>
+    </div>
+    
+  </section>
+
+  <section id="contact" class="contact">
+    <div class = "content">
+      <h2>Contact</h2></br></br>
+        <p style="font-size: 20px;">Thank you for your visiting! If you are interested or have any questions, please feel free to contact me.<br><br><br>Contact Detail:</p>
+                <p><i>Yang Song</i><p>
+                <a href="mailto:frank0098@hotmail.com"><strong>Email:</strong> <ins>frank0098 AT hotmail dot com</ins></a>
+
+    </div>
+  </section>
+
+  <footer id="footer" class = "footer">
+    <div class="content">
+
+            <a href="https://www.facebook.com/yang.song.1000"><i class="fa fa-facebook fa-fw fa-3x "></i></a>
+   
+            <a href="https://www.linkedin.com/in/yang-song-5896427b"><i class="fa fa-linkedin fa-fw fa-3x "></i></a>
+     
+            <a href="https://github.com/frank0098"><i class="fa fa-github fa-fw fa-3x "></i></a>
+    </div>
+  </footer>
 
   <script src="lib/jquery-2.1.3.min/index.js"></script>
   <script src="js/script.js"></script>
